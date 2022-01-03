@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo For 3</title>
+</head>
+
+<body>
+    <script>
+        let altoyancho;
+        altoyancho = parseInt(prompt("Introduzca alto y ancho del tablero"));
+       
+        let resultado = ""
+        let resultado2 = ""
+       
+       for (let fila=1; fila<=altoyancho; fila = fila+1) {//Hacemos la primera de las filas.
+                if (fila % 2 == 0){
+                    resultado = resultado + ("X");
+                } else {
+                    resultado = resultado + ("O");
+                }
+
+            }
+        
+        
+        for (let fila=1; fila<=altoyancho; fila = fila+1) {//Hacemos la segunda de las filas, que es diferente en posiciones.
+                if (fila % 2 == 0){
+                    resultado2 = resultado2 + ("O");
+                } else {
+                    resultado2 = resultado2 + ("X");
+                }
+
+            }
+        for (let repetir=1; repetir<=altoyancho/2; repetir=repetir+1) {//Repetimos las filas en función del tamaño del tablero.
+           
+         console.log (resultado)
+        console.log (resultado2)
+            
+}
+        
+    </script>
+</body>
+
+</html>
